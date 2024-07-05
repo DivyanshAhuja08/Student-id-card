@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+.title{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+ 
+  
+    
+}
+h3,p{
+    padding: 0%;
+    margin: 0%;
+}
+
+.fields{
+    padding: 10px 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.fields>label{
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box{
+   background-color: #fff;   
+   width: 400px;
+   padding-bottom: 20px;
+   /* box-shadow: x y blur size color; */
+   box-shadow: 0px 0px 5px #000;
+    
+}
+
+body{
+    background-color: #eee;
+    animation: colors 10s infinite;
+}
+@keyframes colors{
+    0%{
+       background-color: #D8EFD3;
+    }
+    25%{
+        background-color: #95D2B3;
+    }
+    50%{
+        background-color: #E2BBE9;
+    }
+    75%{
+        background-color: #FFF5E1;
+    }
+    100%{
+        background-color: #FFF5E1;
+    }
+}
+.btn{
+ background-color: #9994cc;;
+ color: #fff;
+ border: 2px solid #3f3989;
+ padding: 10px 20px;
+ cursor: pointer
+}
+.img{
+    margin: 10px;
+text-align: center;
+object-fit: contain;
+
+}
+img{
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 5px #000;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    padding: 10px 20px;
+    text-align: center;
+} 
+.mg-l{
+margin-left: 10px;
+}
+.hidden{
+    display: none;
+}
+body{
+   
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+@media print {
+    body{
+        visibility: hidden;
+    }
+    .forminput{
+        visibility: visible;
+    }
+    .formoutput{
+        visibility: visible;
+    }
+    .print,.another{
+         display: none;
+    }
+}
+@media   (max-width:600px){
+    .box{
+        width: 300px;
+    }
+    .fields{
+        flex-wrap: wrap;
+        
+    }
+    .fields>input{
+        width:100px;
+    }
+    .fields>label{
+        width:130px;
+    }    
+}
